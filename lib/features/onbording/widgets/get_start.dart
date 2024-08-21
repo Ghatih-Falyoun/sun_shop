@@ -15,7 +15,7 @@ class GetStart extends StatelessWidget {
           color: Colors.white,
           borderRadius:
               BorderRadiusDirectional.vertical(top: Radius.circular(32))),
-      height: 690.h,
+      height: 750.h,
       child: Column(
     
         children: [

@@ -37,7 +37,7 @@ class customAppRow extends StatelessWidget {
                     backgroundColor: WidgetStatePropertyAll(Color(0xffEBFFD2))),
               ),
               SizedBox(
-                width: 20.w,
+                width: 60.w,
               )
             ],
           )

@@ -18,7 +18,7 @@ class LoginCard extends StatelessWidget {
           borderRadius:
               BorderRadiusDirectional.vertical(top: Radius.circular(32))),
       //width: double.infinity,
-      height: 690.h,
+      height: 750.h,
       child: Column(
         children: [
           WelcomText(),

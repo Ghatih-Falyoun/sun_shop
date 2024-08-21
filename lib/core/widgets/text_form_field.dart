@@ -55,7 +55,7 @@ class AppTextFormField extends StatelessWidget {
                   ),
                   borderRadius: BorderRadius.circular(16.0)),
 
-          //Error Border        
+          //Error Border
           errorBorder: const OutlineInputBorder(
             borderSide: BorderSide(
               color: Colors.red,
@@ -67,9 +67,6 @@ class AppTextFormField extends StatelessWidget {
             color: Colors.red,
             width: 1.3,
           )),
-
-
-
           hintStyle: hintStyle ?? textStyles.reqular14lightGray,
           hintText: hintText,
           suffixIcon: suffixIcon,
@@ -80,6 +77,7 @@ class AppTextFormField extends StatelessWidget {
       validator: (value) {
         return validator(value);
       },
+      
     );
   }
 }

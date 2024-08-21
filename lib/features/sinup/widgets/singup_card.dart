@@ -17,14 +17,14 @@ class singupCard extends StatelessWidget {
           borderRadius:
               BorderRadiusDirectional.vertical(top: Radius.circular(32))),
       width: double.infinity,
-      height: 750.h,
+      height: 800.h,
       child: Column(
         children: [
           GetStartedText(),
-          SizedBox(height: 50.h),
+          SizedBox(height: 30.h),
           EmailAndPasswordAndName(),
           SizedBox(
-            height: 33.h,
+            height: 10.h,
           ),
           orSingWith(),
           SizedBox(
