@@ -11,28 +11,36 @@ class EmailAndPassword extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController emailController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
+    final _key = GlobalKey<FormState>();
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 24.h),
       child: Form(
+          key: _key,
           child: Column(
-        children: [
-          AppTextFormField(
-            controller: emailController,
-            hintText: 'Enter you Email',
-            validator: (p0) {},
-          ),
-          SizedBox(
-            height: 33.h,
-          ),
-          AppTextFormField(
-              controller: passwordController,
-              hintText: 'Enter your password',
-              validator: (p0) {}),
-              SizedBox(height:  33.h,),
-          GradientButton(textStyle: textStyles.reqular24Black, height: 62, width: 380, text: 'Log in', onPressed: (){})
-          
-        ],
-      )),
+            children: [
+              AppTextFormField(
+                controller: emailController,
+                hintText: 'Enter you Email',
+                validator: (p0) {},
+              ),
+              SizedBox(
+                height: 33.h,
+              ),
+              AppTextFormField(
+                  controller: passwordController,
+                  hintText: 'Enter your password',
+                  validator: (p0) {}),
+              SizedBox(
+                height: 33.h,
+              ),
+              GradientButton(
+                  textStyle: textStyles.reqular24Black,
+                  height: 62,
+                  width: 380,
+                  text: 'Log in',
+                  onPressed: () {})
+            ],
+          )),
     );
   }
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "766740208079",
+    "project_id": "sunshop-d040b",
+    "storage_bucket": "sunshop-d040b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766740208079:android:b541d8cd9d56cb905d1aba",
+        "android_client_info": {
+          "package_name": "com.example.sun_shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBXnja_0lVAkArin48LJ2ZYp2SEaLO0Fg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
