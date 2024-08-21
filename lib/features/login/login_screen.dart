@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sun_shop/core/helpers/extensions.dart';
 import 'package:sun_shop/core/routes/routes.dart';
 import 'package:sun_shop/core/widgets/colorful_background.dart';
+import 'package:sun_shop/features/login/widgets/login_bloc_listener.dart';
 import 'package:sun_shop/features/login/widgets/login_card.dart';
 import 'package:sun_shop/features/login/widgets/custom_app_row.dart';
 
@@ -29,7 +30,7 @@ class LoginScreen extends StatelessWidget {
                 height: 30.h,
               ),
               LoginCard(),
-          
+              LoginBlocListener()
             ],
           ),
         ),

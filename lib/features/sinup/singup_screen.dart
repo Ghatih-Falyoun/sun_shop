@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sun_shop/core/helpers/extensions.dart';
 import 'package:sun_shop/core/routes/routes.dart';
+import 'package:sun_shop/core/theme/color_manager.dart';
+import 'package:sun_shop/core/theme/text_styles.dart';
 import 'package:sun_shop/core/widgets/colorful_background.dart';
 import 'package:sun_shop/features/login/widgets/custom_app_row.dart';
 import 'package:sun_shop/features/sinup/logic/cubit/singup_cubit.dart';
@@ -35,11 +37,8 @@ class SingupScreen extends StatelessWidget {
               SizedBox(
                 height: 30.h,
               ),
-              BlocBuilder<SingupCubit, SingupState>(
-                builder: (context, state) {
-                  return singupCard();
-                },
-              ),
+              singupCard(),
+              
             ],
           ),
         ),
