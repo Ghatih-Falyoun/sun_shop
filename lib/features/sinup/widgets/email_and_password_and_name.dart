@@ -8,7 +8,6 @@ import 'package:sun_shop/core/widgets/text_form_field.dart';
 import 'package:sun_shop/features/sinup/logic/cubit/singup_cubit.dart';
 
 class EmailAndPasswordAndName extends StatelessWidget {
-  
   EmailAndPasswordAndName({super.key});
 
   @override
@@ -68,7 +67,13 @@ class EmailAndPasswordAndName extends StatelessWidget {
                   width: 380,
                   text: 'Sing up',
                   onPressed: () {
-                    if (context.read<SingupCubit>().key.currentState!.validate()) {
+                    if (context
+                        .read<SingupCubit>()
+                        .key
+                        .currentState!
+                        .validate()) {
+                      context.read<SingupCubit>().singup();
+                      
                       print('its valid');
                     }
                   })
