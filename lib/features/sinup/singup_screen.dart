@@ -10,6 +10,7 @@ import 'package:sun_shop/features/login/widgets/custom_app_row.dart';
 import 'package:sun_shop/features/sinup/logic/cubit/singup_cubit.dart';
 import 'package:sun_shop/features/sinup/logic/cubit/singup_state.dart';
 import 'package:sun_shop/features/sinup/widgets/singup_card.dart';
+import 'package:sun_shop/features/sinup/widgets/sinup_lisener_bloc.dart';
 
 class SingupScreen extends StatelessWidget {
   const SingupScreen({super.key});
@@ -38,7 +39,7 @@ class SingupScreen extends StatelessWidget {
                 height: 30.h,
               ),
               singupCard(),
-              
+              SinupLisenerBloc()
             ],
           ),
         ),
