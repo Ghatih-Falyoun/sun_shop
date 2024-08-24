@@ -42,7 +42,10 @@ class SinupLisenerBloc extends StatelessWidget {
             )));
   }
 
-  void setupError(BuildContext context, String error) {
+  
+            
+  
+void setupError(BuildContext context, String error) {
     
     showDialog(
       context: context,
@@ -69,7 +72,4 @@ class SinupLisenerBloc extends StatelessWidget {
           ],
         );
       },
-    );
-              
-  }
-
+    );}

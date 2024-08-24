@@ -38,7 +38,7 @@ class GoogleAndFacbook extends StatelessWidget {
     style: ElevatedButton.styleFrom(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(14)),),
       side: BorderSide(color: colorManager.gray),
-      minimumSize: Size(180, 65),
+      minimumSize: Size(180.w, 65.h),
       backgroundColor: Colors.white
     )
     ,
@@ -47,8 +47,8 @@ class GoogleAndFacbook extends StatelessWidget {
         children: [
           Image.asset(
             photoUrl,
-            width: 43,
-            height: 43,
+            width: 43.w,
+            height: 43.h,
           ),
          
           Text(

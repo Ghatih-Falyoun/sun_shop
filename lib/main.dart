@@ -19,9 +19,7 @@ isItLoginOrNot() async {
   String? user = await SharedPrefHelper.getString(Constants.UserId);
   if (user == null || user.isEmpty) {
     Constants.IsLogin = false;
-    print('hello world');
   }else{
     Constants.IsLogin = true;
-    print('hello world2');
   }
 }

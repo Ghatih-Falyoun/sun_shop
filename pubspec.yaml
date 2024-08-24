@@ -37,8 +37,10 @@ dependencies:
   freezed_annotation: ^2.4.4
   firebase_auth: ^5.1.4
   shared_preferences: ^2.3.2
+  #An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics
+  flutter_svg: ^2.0.10+1
 
-
+  pay: ^2.0.0
 
 
 
@@ -73,6 +75,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/svgs/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

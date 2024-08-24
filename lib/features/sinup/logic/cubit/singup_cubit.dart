@@ -13,6 +13,10 @@ class SingupCubit extends Cubit<SingupState> {
   TextEditingController passwordController = TextEditingController();
   final key = GlobalKey<FormState>();
 
+  void printt() {
+    print('thats fansy');
+  }
+
   Future<void> singup() async {
     emit(SingupState.loading());
     try {
@@ -61,6 +65,9 @@ class SingupCubit extends Cubit<SingupState> {
         'favorites': [], // Initialize empty favorites array
         // Add other user-specific fields here
       };
+
+       
+          FirebaseFirestore.instance.collection('customer').doc(uid).collection('wishlist');
 
       // Set or update the user document
       await userDocRef.set(userData, SetOptions(merge: true));

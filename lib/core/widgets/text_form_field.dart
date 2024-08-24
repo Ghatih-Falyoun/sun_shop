@@ -11,12 +11,14 @@ class AppTextFormField extends StatelessWidget {
   final TextStyle? hintStyle;
   final String hintText;
   final bool? isObscureText;
+  final bool? isInputNumber;
   final Widget? suffixIcon;
   final Color? backgroundColor;
   final TextEditingController? controller;
   final Function(String?) validator;
   const AppTextFormField(
       {super.key,
+      this.isInputNumber,
       this.contentPadding,
       this.focusedBorder,
       this.enabledBorder,
@@ -33,6 +35,7 @@ class AppTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      keyboardType: isInputNumber ?? false ? TextInputType.number :  TextInputType.text,
       decoration: InputDecoration(
           isDense: true,
           contentPadding: contentPadding ??
@@ -77,7 +80,6 @@ class AppTextFormField extends StatelessWidget {
       validator: (value) {
         return validator(value);
       },
-      
     );
   }
 }
